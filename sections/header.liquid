@@ -1,0 +1,31 @@
+<div id="header">
+  <div class="topbar">
+  </div>
+  <div class="main-header">
+    <div class="container">
+      <div class="main-inner">
+        <div class="logo-wrap">
+          {% comment %} {{ shop.name }}  {% endcomment %}
+          {% render 'leftwinger-logo.liquid' %}
+        </div>
+        <div class="main-links">
+          {% for link in linklists.main-menu.links %}
+            <div class="link-wrap">
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </div>
+            {% comment %} {% if link.links %}
+            {% endif %} {% endcomment %}
+          {% endfor %}
+        </div>
+        <div class="icon-wrap">
+          <div class="account">
+            <a href="{{ routes.account_login_url }}"><i class='bx bx-user' ></i></a>
+          </div>
+          <div class="cart">
+            <a href="{{ routes.cart_url }}"><i class='bx bx-cart'></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+#header .main-header .main-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+#header .main-header .main-inner .logo-wrap {
+  flex: 1;
+}
+
+#header .main-header .main-inner .main-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex: 2;
+}
+
+#header .main-header .main-inner .icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  flex: 1;
+}
